@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+  <script type="text/javascript">
+    function CheckNumber(){
+    var pnumber = document.getElementById("pnumber").value
+    if(pnumber.length<11){
+      document.getElementById("showtxt").innerHTML = "less then 11"
+    }
+    else if(pnumber,substr(0,1)!="1"){
+      document.getElementById("showtxt").innerHTML = "it's not a number"
+    }
+    else if(isNaN(pnumber)){
+      document.getElementById("showtxt").innerHTML = "it's not a number"
+    }
+    else {
+      document.getElementById("showtxt").innerHTML = "Fine"
+          }
+    }
+</script>
+<form id="form1">
+  Input your PhoneNumber:<br><input type="text" id="pnumber">
+  <input type="button" value="CHECK" onclick="Checknumber()">
+    <div id="showtxt"></div>
+    <br>
+  </form>
+
+</body>
+</html>
